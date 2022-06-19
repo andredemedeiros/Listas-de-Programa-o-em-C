@@ -1,0 +1,37 @@
+/*
+ALGORITMO
+DECLARE N,I,NUMERADOR,A,DENOMINADOR,SOMA NUMÉRICO
+ESCREVA "N"
+LEIA N
+SOMA←0
+NUMERADOR←1
+DENOMINADOR←N
+PARA I ← 1 ATÉ N FAÇA
+    INÍCIO
+    A←(NUMERADOR/DENOMINADOR)
+    SOMA←SOMA+A
+    NUMERADOR←NUMERADOR+1
+    DENOMINADOR←DENOMINADOR-1
+    FIM
+ESCREVA "Valor de S = ",SOMA
+FIM_ALGORITMO.
+*/
+#include <stdio.h>
+
+int main()
+{
+    float N,I,NUMERADOR,A,DENOMINADOR,SOMA;
+    printf("N = ");
+    scanf("%f%*c", &N);
+    SOMA=0;
+    NUMERADOR=1;
+    DENOMINADOR=N;
+    for(I=0;I<N;I++)
+        {
+        A=(NUMERADOR/DENOMINADOR);
+        SOMA=SOMA+A;
+        NUMERADOR=NUMERADOR+1;
+        DENOMINADOR=DENOMINADOR-1;
+        }
+    printf("Valor de S = %f", SOMA);
+}
